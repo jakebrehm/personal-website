@@ -54,7 +54,7 @@
             "github": "manymiles",
             "preview": "https://www.manymiles.app/"
         },
-        "description": "\ud83d\ude98 A Flask web app to easily keep track of your mileage."
+        "description": "\ud83d\ude98 A Flask web app that keeps track of your mileage and teaches you about your driving habits."
     },
     "GeoPhotos": {
         "tags": [
@@ -118,13 +118,13 @@
         },
         "description": "\u270f\ufe0f Visualizes the discrete fourier transform of a user-drawn path using epicycles."
     },
-    "Portfolio Website": {
+    "Portfolio": {
         "tags": [
             "Web Dev"
         ],
         "image": "",
         "links": {
-            "github": "personal-website-v2",
+            "github": "portfolio",
             "preview": "/"
         },
         "description": "\ud83d\uddc2 My own personal website with a Flask (Python) backend."

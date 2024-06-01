@@ -99,11 +99,11 @@ projects = {
         },
     },
 
-    'Portfolio Website': {
+    'Portfolio': {
         'tags': ['Web Dev'],
         'image': '',
         'links': {
-            'github': 'personal-website-v2',
+            'github': 'portfolio',
             'preview': '/',
         },
     },

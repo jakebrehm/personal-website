@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://github.com/jakebrehm/personal-website-v2/blob/master/img/logo.png" width="100" alt="Personal Portfolio Logo"/>
+  <img src="https://raw.githubusercontent.com/jakebrehm/portfolio/master/img/logo.png" width="100" alt="Personal Portfolio Logo"/>
 </p>
 
-<h1 align="center">Personal Portfolio Website - v2</h1>
+<h1 align="center">Personal Portfolio Website</h1>
 
 <p align="center">
     The second iteration of <a href="https://www.jakebrehm.com/" target="_blank">jakebrehm.com</a>, built with <a href="https://github.com/pallets/flask" target="_blank">Flask</a> and hosted on <a href="https://www.heroku.com/" target="_blank">Heroku</a>.
 </p>
 
 <p align="center">
-  <img src="https://github.com/jakebrehm/personal-website-v2/blob/master/img/screenshot.png" alt="Personal Portfolio Screenshot"/>
+  <img src="https://raw.githubusercontent.com/jakebrehm/portfolio/master/img/screenshot-border.png" alt="Personal Portfolio Screenshot"/>
 </p>
 
 ---
@@ -20,6 +20,6 @@ Check out the website [here](https://jakebrehm.com), or visit the repository of 
 
 ## Inspiration
 
-I'm not exactly a web developer, so the foundation of this website is based heavily upon [Daily Tuition's tutorial](https://www.youtube.com/watch?v=dgKSqz3it50&list=PLngPGtfDZIGdKTafPdmYUpzbn37jtj9-W&index=20&t=0s) on YouTube.
+The foundation of this website is based heavily upon [Daily Tuition's tutorial](https://www.youtube.com/watch?v=dgKSqz3it50&list=PLngPGtfDZIGdKTafPdmYUpzbn37jtj9-W&index=20&t=0s) on YouTube.
 
 I also drew a lot of inspiration from [Brittany Chiang's portfolio website](https://brittanychiang.com/). I think it looks very sleek and concise, and it was pretty much how I'd originally envisioned my website to look. That said, it has since taken a different path.
