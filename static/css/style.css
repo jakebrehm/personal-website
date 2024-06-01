@@ -37,7 +37,7 @@
     padding: 1.7rem;
 }
 
-.header-area .main-menu .navbar-nav .active a {
+.header-area .main-menu .navbar-nav .active a:not(.nav-button) {
     color: var(--primary-color);
 }
 
