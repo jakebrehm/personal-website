@@ -1,141 +1,144 @@
-[
-    {
-        "name": "Snake AI",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "snake-ai"
+{
+    "last_updated": "2025-02-06T18:10:53.359049+00:00",
+    "projects": [
+        {
+            "name": "Snake AI",
+            "description": "\ud83d\udc0d A neural network AI learns how to play a custom version of the classic snake game.",
+            "image": null,
+            "links": {
+                "github": "snake-ai"
+            },
+            "tags": [
+                "Machine Learning"
+            ]
         },
-        "tags": [
-            "Machine Learning"
-        ]
-    },
-    {
-        "name": "Predicting Disaster Authenticity",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "predicting-disaster-authenticity"
+        {
+            "name": "Predicting Disaster Authenticity",
+            "description": "\ud83c\udf2a\ufe0f Predicts whether or not a tweet was announcing a real disaster using NLP techniques.",
+            "image": null,
+            "links": {
+                "github": "predicting-disaster-authenticity"
+            },
+            "tags": [
+                "Machine Learning"
+            ]
         },
-        "tags": [
-            "Machine Learning"
-        ]
-    },
-    {
-        "name": "European Tweet Classification",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "european-tweet-classification"
+        {
+            "name": "European Tweet Classification",
+            "description": "\ud83d\udc26 Determined a Twitter user's political views using a NLP pipeline.",
+            "image": null,
+            "links": {
+                "github": "european-tweet-classification"
+            },
+            "tags": [
+                "Machine Learning"
+            ]
         },
-        "tags": [
-            "Machine Learning"
-        ]
-    },
-    {
-        "name": "Demesstify",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "demesstify"
+        {
+            "name": "Demesstify",
+            "description": "\ud83d\udcf1Demystifies your messages and allows for easy analysis and visualization of conversations.",
+            "image": null,
+            "links": {
+                "github": "demesstify"
+            },
+            "tags": [
+                "Featured",
+                "Library"
+            ]
         },
-        "tags": [
-            "Featured",
-            "Library"
-        ]
-    },
-    {
-        "name": "ManyMiles",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "manymiles",
-            "preview": "https://www.manymiles.app/"
+        {
+            "name": "ManyMiles",
+            "description": "\ud83d\ude98 A Flask web app that keeps track of your mileage and teaches you about your driving habits.",
+            "image": null,
+            "links": {
+                "github": "manymiles",
+                "preview": "https://www.manymiles.app/"
+            },
+            "tags": [
+                "Featured",
+                "Web Development"
+            ]
         },
-        "tags": [
-            "Featured",
-            "Web Development"
-        ]
-    },
-    {
-        "name": "GeoPhotos",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "geophotos"
+        {
+            "name": "GeoPhotos",
+            "description": "\ud83d\uddfa \ud83d\udccd A Python package to pull, analyze, and plot coordinates from various sources.",
+            "image": null,
+            "links": {
+                "github": "geophotos"
+            },
+            "tags": [
+                "Library"
+            ]
         },
-        "tags": [
-            "Library"
-        ]
-    },
-    {
-        "name": "EZPZ Plotting",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "ezpz-plotting"
+        {
+            "name": "EZPZ Plotting",
+            "description": "\ud83d\udcc8 Easily visualize and manipulate plots from multiple data files.",
+            "image": null,
+            "links": {
+                "github": "ezpz-plotting"
+            },
+            "tags": [
+                "Software Development"
+            ]
         },
-        "tags": [
-            "Software Development"
-        ]
-    },
-    {
-        "name": "Specialty Referral Network",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "referral-network"
+        {
+            "name": "Specialty Referral Network",
+            "description": "\ud83d\udd0d A Flask application that helps identify the bottlenecks in a specialty referral network.",
+            "image": null,
+            "links": {
+                "github": "referral-network"
+            },
+            "tags": [
+                "Web Development"
+            ]
         },
-        "tags": [
-            "Web Development"
-        ]
-    },
-    {
-        "name": "Drawing Epicycler",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "drawing-epicycler",
-            "preview": "/epicycler/"
+        {
+            "name": "Drawing Epicycler",
+            "description": "\u270f\ufe0f Visualizes the discrete fourier transform of a user-drawn path using epicycles.",
+            "image": null,
+            "links": {
+                "github": "drawing-epicycler",
+                "preview": "/epicycler/"
+            },
+            "tags": [
+                "Web Development"
+            ]
         },
-        "tags": [
-            "Web Development"
-        ]
-    },
-    {
-        "name": "Portfolio",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "portfolio",
-            "preview": "/"
+        {
+            "name": "Portfolio",
+            "description": "\ud83d\uddc2 My own personal website with a Flask (Python) backend.",
+            "image": null,
+            "links": {
+                "github": "portfolio",
+                "preview": "/"
+            },
+            "tags": [
+                "Web Development"
+            ]
         },
-        "tags": [
-            "Web Development"
-        ]
-    },
-    {
-        "name": "Afloat",
-        "description": "🛟 An iOS app for cash flow management.",
-        "image": null,
-        "links": {
-            "preview": "https://stayafloat.app/"
+        {
+            "name": "Afloat",
+            "description": "\ud83d\udedf An iOS app for cash flow management.",
+            "image": null,
+            "links": {
+                "preview": "https://stayafloat.app/"
+            },
+            "tags": [
+                "Featured",
+                "Mobile Development"
+            ]
         },
-        "tags": [
-            "Featured",
-            "Mobile Development"
-        ]
-    },
-    {
-        "name": "Citi Bike Inventory",
-        "description": null,
-        "image": null,
-        "links": {
-            "github": "citi-bike-inventory"
-        },
-        "tags": [
-            "Data Engineering",
-            "Machine Learning"
-        ]
-    }
-]
+        {
+            "name": "Citi Bike Inventory",
+            "description": "\ud83d\udeb2 An end-to-end data-intensive application to track and predict Citi Bike inventory across NYC.",
+            "image": null,
+            "links": {
+                "github": "citi-bike-inventory"
+            },
+            "tags": [
+                "Data Engineering",
+                "Machine Learning"
+            ]
+        }
+    ]
+}

@@ -2,6 +2,7 @@
 Module for generating projects to be displayed on the website.
 """
 
+import datetime as dt
 import json
 import os
 from pathlib import Path
@@ -13,10 +14,36 @@ from github import AuthenticatedUser, GithubException
 PROJECTS_FILENAME: str = "projects.json"
 
 
-def read_blueprint(filepath: str | Path, encoding: str = "utf-8") -> list:
-    """Reads the specified JSON file, returns data as a list of dictionaries."""
+def read_blueprint(
+    filepath: str | Path,
+    encoding: str = "utf-8",
+) -> tuple[list | str]:
+    """Reads the specified JSON file and returns its metadata and data."""
     with open(filepath, "r", encoding=encoding) as f:
-        return json.load(f)
+        data = json.load(f)
+    last_updated = dt.datetime.fromisoformat(data["last_updated"])
+    projects = data["projects"]
+    return last_updated, projects
+
+
+def write_blueprint(
+    projects: list,
+    projects_path: str | Path,
+    encoding: str = "utf-8",
+) -> None:
+    """Writes the provided data to the specified JSON file."""
+    data = {
+        "last_updated": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "projects": projects,
+    }
+    with open(projects_path, "w", encoding=encoding) as f:
+        json.dump(data, f, indent=4)
+
+
+def time_since_last_updated(last_updated: dt.datetime) -> str:
+    """Gets the time since the last update."""
+    now = dt.datetime.now(dt.timezone.utc)
+    return now - last_updated
 
 
 def update_description_from_github(
@@ -73,14 +100,16 @@ def get_projects(
     github_token = os.environ["GITHUB_API_TOKEN"]
 
     # Read the projects JSON file
-    projects = read_blueprint(projects_path)
+    last_updated, projects = read_blueprint(projects_path)
 
     # Open a connection to the GitHub API and get the user's information
     g = github.Github(github_token)
     user = g.get_user()
 
-    # Clean the projects data
-    projects = clean_projects(projects, user)
+    # Clean the projects data if the last update was long enough ago
+    if time_since_last_updated(last_updated).days >= 7:
+        projects = clean_projects(projects, user)
+        write_blueprint(projects, projects_path)
 
     # Sort the projects by name
     projects = sort_projects(projects)
