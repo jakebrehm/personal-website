@@ -115,7 +115,12 @@ p.para {
     background: transparent;
     border: none;
     font: normal 500 16px/40px "Montserrat";
+    color: black;
     text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button:hover {
+    color: var(--text-color);
 }
 
 .site-main .project-area .button-group .active {
