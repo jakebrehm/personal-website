@@ -1,172 +1,228 @@
-{% extends "header.html" %}
+{% extends "header.html" %} {% block body %}
 
-{% block body %}
+<!-- Header Area -->
 
-        <!-- Header Area -->
-        
-        <header class="header-area">
-            <div class="main-menu">
-                <nav class="navbar navbar-expand-lg navbar-light navbar-default">
-                    <a class="navbar-brand" href="#">
-                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="site-logo" class="img-fluid">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="mr-auto"></div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" class="btn nav-button text-uppercase" style="width: 6em">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<header class="header-area">
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-default">
+      <a class="navbar-brand" href="#">
+        <img
+          src="{{ url_for('static', filename='img/logo.png') }}"
+          alt="site-logo"
+          class="img-fluid"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="{{ url_for('static', filename='resume.pdf') }}"
+              target="_blank"
+              class="btn nav-button text-uppercase"
+              style="width: 6em"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Main Section -->
+
+<main class="site-main">
+  <!-- Banner Section -->
+
+  <section class="site-banner" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 site-title">
+          <div class="mx-auto site-title-contents">
+            <h4 class="title-text">Hey, my name is</h4>
+            <h1 class="title-text text-uppercase">Jake Brehm.</h1>
+            <h3 class="title-text text-uppercase">I'm a data engineer.</h3>
+            <div class="site-buttons">
+              <div class="d-flex flow-row flex-wrap">
+                <a
+                  href="mailto:mail@jakebrehm.com"
+                  class="btn button primary-button mr-4 text-uppercase"
+                  >Get in touch</a
+                >
+                <a
+                  href="{{ url_for('static', filename='resume.pdf') }}"
+                  class="btn button secondary-button text-uppercase"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-html="true"
+                  title="<b>Last Updated:</b> <br> February 6, 2025"
+                  id="resume-date"
+                >
+                  View my Resume
+                </a>
+              </div>
             </div>
-        </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Main Section -->
+  <!-- About Section -->
 
-        <main class="site-main">
+  <section class="about-area vertical-center" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 about-title mx-auto text-center">
+          <h2 class="text-uppercase">
+            <span>A little about me</span>
+          </h2>
+          <div class="paragraph mx-auto">
+            <p class="para">
+              I'm Jake, and I'm from the quiet town of Hamburg outside of
+              Buffalo, NY--the (alleged) birthplace of the hamburger!
+              <br /><br />
+              I'm equipped with a bachelor's degree in mechanical engineering
+              from
+              <a href="https://www.clarkson.edu/">Clarkson University</a>, where
+              I had a heavy focus on mathematics and physics, as well as a
+              master's degree in data science from the
+              <a href="https://www.rochester.edu/">University of Rochester</a>.
+              <br /><br />
+              I'm currently a data engineer at Horizon Health Services, a
+              not-for-profit corporation headquartered in Getzville, NY.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Banner Section -->
+  <!-- Project Section -->
 
-            <section class="site-banner" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 site-title">
-                            <div class="mx-auto site-title-contents">
-                                <h4 class="title-text">Hey, my name is</h4>
-                                <h1 class="title-text text-uppercase">Jake Brehm.</h1>
-                                <h3 class="title-text text-uppercase">I'm a data engineer.</h3>
-                                <div class="site-buttons">
-                                    <div class="d-flex flow-row flex-wrap">
-                                        <a href="mailto:mail@jakebrehm.com" class="btn button primary-button mr-4 text-uppercase">Get in touch</a>
-                                        <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn button secondary-button text-uppercase" data-toggle="tooltip" data-placement="bottom"
-                                        data-html="true" title="<b>Last Updated:</b> <br> June 1, 2024" id="resume-date">
-                                            View my Resume
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  <section class="project-area" id="projects">
+    <div class="container">
+      <div class="pb-5 text-center">
+        <h1 class="project-title text-uppercase title-h1">
+          Here are some of my projects
+        </h1>
+      </div>
 
-            <!-- About Section -->
-            
-            <section class="about-area vertical-center" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 about-title mx-auto text-center">
-                            <h2 class="text-uppercase">
-                                <span>A little about me</span>
-                            </h2>
-                            <div class="paragraph mx-auto">
-                                <p class="para">
-                                    I'm Jake, and I'm from the quiet town of Hamburg outside of Buffalo, NY--the (alleged) birthplace of the hamburger!
-                                    <br><br>
-                                    I'm equipped with a bachelor's degree in mechanical engineering from
-                                    <a href="https://www.clarkson.edu/">Clarkson University</a>, where I had
-                                    a heavy focus on mathematics and physics, as well as a master's degree in data science
-                                    from the <a href="https://www.rochester.edu/">University of Rochester</a>.
-                                    <br><br>
-                                    I'm currently a data engineer at Horizon Health Services, a not-for-profit corporation headquartered in Getzville, NY.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <div class="button-group">
+        <button type="button" data-filter="*">All</button>
+        <button type="button" data-filter=".featured" id="btn1" class="active">
+          Featured
+        </button>
+        {% for tag in tags %}
+        <button
+          type="button"
+          data-filter=".{{tag.lower().replace('/', '-').replace(' ', '-')}}"
+        >
+          {{tag}}
+        </button>
+        {% endfor %}
+      </div>
 
-            <!-- Project Section -->
-
-            <section class="project-area" id="projects">
-                <div class="container">
-                    <div class="pb-5 text-center">
-                        <h1 class="project-title text-uppercase title-h1">Here are some of my projects</h1>
-                    </div>
-
-                    <div class="button-group">
-                        <button type="button" data-filter="*">All</button>
-                        <button type="button" data-filter=".featured" id="btn1" class="active">Featured</button>
-                        {% for tag in tags %}
-                            <button type="button" data-filter=".{{tag.lower().replace('/', '-').replace(' ', '-')}}">{{tag}}</button>
-                        {% endfor %}
-                    </div>
-
-                    <div class="row grid">
-                        {% for project, info in projects.items() %}
-                            <div class="col-lg-4 col-md-6 col-sm-12 element-item{% for tag in info['tags'] %} {{tag.lower().replace('/', '-').replace(' ', '-')}}{% endfor %}">
-                                <div class="project-item">
-                                    {% if show_images and info['image'] %}
-                                        <div class="img">
-                                            <img src="{{ url_for('static', filename=info['image']) }}" alt="Reddit Downloader">
-                                        </div>
-                                    {% endif %}
-                                    <div class="title">
-                                        <h4 class="text-uppercase">{{project}}</h4>
-                                        <span class="text-secondary">{{', '.join(info['tags'])}}</span>
-                                    </div>
-
-                                    <div class="description">
-                                        {% if 'description' in info and info['description'] %}
-                                            {{info['description']}}
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="project-links">
-                                        {% if 'github' in info['links'] %}
-                                            <a href="https://github.com/jakebrehm/{{info['links']['github']}}" target="_blank"><i class="fab fa-github"></i></a>
-                                        {% endif %}
-                                        {% if 'preview' in info['links'] %}
-                                            <a href="{{info['links']['preview']}}" target="_blank"><i class="fas fa-play"></i></a>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer and Social Menu -->
-
-        <footer class="footer-area">
-            <div class="social-menu">
-                <div>
-                    <h5 class="social-header text-uppercase text-center">Get in touch</h5>
-                    <div class="social text-center">
-                        <div>
-                            <a href="mailto:mail@jakebrehm.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/jacobbrehm/"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/jakebrehm"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="row grid">
+        {% for project in projects %}
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 element-item{% for tag in project['tags'] %} {{tag.lower().replace('/', '-').replace(' ', '-')}}{% endfor %}"
+        >
+          <div class="project-item">
+            {% if show_images and project['image'] %}
+            <div class="img">
+              <img
+                src="{{ url_for('static', filename=project['image']) }}"
+                alt="Reddit Downloader"
+              />
             </div>
-            <div class="copyright text-center">
-                <p class="para">
-                    <a href="https://github.com/jakebrehm/personal-website-v2">Designed and built by Jake Brehm</a>
-                </p>
+            {% endif %}
+            <div class="title">
+              <h4 class="text-uppercase">{{project['name']}}</h4>
+              <span class="text-secondary">{{', '.join(project['tags'])}}</span>
             </div>
-        </footer>
+
+            <div class="description">
+              {% if 'description' in project and project['description'] %}
+              {{project['description']}} {% endif %}
+            </div>
+
+            <div class="project-links">
+              {% if 'github' in project['links'] %}
+              <a
+                href="https://github.com/jakebrehm/{{project['links']['github']}}"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              {% endif %} {% if 'preview' in project['links'] %}
+              <a href="{{project['links']['preview']}}" target="_blank"
+                ><i class="fas fa-play"></i
+              ></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer and Social Menu -->
+
+<footer class="footer-area">
+  <div class="social-menu">
+    <div>
+      <h5 class="social-header text-uppercase text-center">Get in touch</h5>
+      <div class="social text-center">
+        <div>
+          <a href="mailto:mail@jakebrehm.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/jacobbrehm/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://github.com/jakebrehm"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <p class="para">
+      <a href="https://github.com/jakebrehm/personal-website-v2"
+        >Designed and built by Jake Brehm</a
+      >
+    </p>
+  </div>
+</footer>
 
 {% endblock %}

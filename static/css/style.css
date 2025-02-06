@@ -99,13 +99,12 @@ p.para {
 }
 
 .site-main .project-area .project-title {
-    /* padding-top: 5rem; */
     padding-top: 10rem;
 }
 
 .site-main .project-area .button-group {
     overflow: auto;
-    white-space: nowrap;
+    padding: 2rem 0;
 }
 
 .site-main .project-area .button-group::-webkit-scrollbar {
@@ -115,7 +114,7 @@ p.para {
 .site-main .project-area .button-group button {
     background: transparent;
     border: none;
-    font: normal 500 16px/130px "Montserrat";
+    font: normal 500 16px/40px "Montserrat";
     text-transform: uppercase;
 }
 
@@ -123,8 +122,8 @@ p.para {
     color: var(--primary-color);
 }
 
-.site-main .project-area .button-group button + button {
-    padding-left: 3rem;
+.site-main .project-area .button-group button {
+    padding-right: 3rem;
 }
 
 .site-main .project-area .grid .project-item > .title h4 {
@@ -212,14 +211,3 @@ footer.footer-area .copyright .para a {
 footer.footer-area .copyright .para a:hover {
     color: var(--primary-color);
 }
-
-
-
-
-
-
-
-/* .tooltip .tooltip-text {
-    top: -5px;
-    left: 105%;
-  } */

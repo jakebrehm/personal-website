@@ -1,168 +1,141 @@
-{
-    "Snake AI": {
-        "tags": [
-            "Featured",
-            "Machine Learning"
-        ],
-        "image": "",
+[
+    {
+        "name": "Snake AI",
+        "description": null,
+        "image": null,
         "links": {
             "github": "snake-ai"
         },
-        "description": "\ud83d\udc0d A neural network AI learns how to play a custom version of the classic snake game."
-    },
-    "Predicting Disaster Authenticity": {
         "tags": [
-            "Featured",
             "Machine Learning"
-        ],
-        "image": "",
+        ]
+    },
+    {
+        "name": "Predicting Disaster Authenticity",
+        "description": null,
+        "image": null,
         "links": {
             "github": "predicting-disaster-authenticity"
         },
-        "description": "\ud83c\udf2a\ufe0f Predicts whether or not a tweet was announcing a real disaster using NLP techniques."
-    },
-    "European Tweet Classification": {
         "tags": [
-            "Featured",
             "Machine Learning"
-        ],
-        "image": "",
+        ]
+    },
+    {
+        "name": "European Tweet Classification",
+        "description": null,
+        "image": null,
         "links": {
             "github": "european-tweet-classification"
         },
-        "description": "\ud83d\udc26 Determined a Twitter user's political views using a NLP pipeline."
-    },
-    "Demesstify": {
         "tags": [
-            "Featured",
-            "Databases"
-        ],
-        "image": "",
+            "Machine Learning"
+        ]
+    },
+    {
+        "name": "Demesstify",
+        "description": null,
+        "image": null,
         "links": {
             "github": "demesstify"
         },
-        "description": "\ud83d\udcf1Demystifies your messages and allows for easy analysis and visualization of conversations."
-    },
-    "ManyMiles": {
         "tags": [
             "Featured",
-            "Web Dev",
-            "Databases"
-        ],
-        "image": "",
+            "Library"
+        ]
+    },
+    {
+        "name": "ManyMiles",
+        "description": null,
+        "image": null,
         "links": {
             "github": "manymiles",
             "preview": "https://www.manymiles.app/"
         },
-        "description": "\ud83d\ude98 A Flask web app that keeps track of your mileage and teaches you about your driving habits."
-    },
-    "GeoPhotos": {
         "tags": [
-            "Featured"
-        ],
-        "image": "",
+            "Featured",
+            "Web Development"
+        ]
+    },
+    {
+        "name": "GeoPhotos",
+        "description": null,
+        "image": null,
         "links": {
             "github": "geophotos"
         },
-        "description": "\ud83d\uddfa \ud83d\udccd A Python package to pull, analyze, and plot coordinates from various sources."
-    },
-    "EZPZ Plotting": {
         "tags": [
-            "Software"
-        ],
-        "image": "",
+            "Library"
+        ]
+    },
+    {
+        "name": "EZPZ Plotting",
+        "description": null,
+        "image": null,
         "links": {
             "github": "ezpz-plotting"
         },
-        "description": "\ud83d\udcc8 Easily visualize and manipulate plots from multiple data files."
-    },
-    "EZPZ Reducer": {
         "tags": [
             "Software"
-        ],
-        "image": "",
-        "links": {
-            "github": "ezpz-reducer"
-        },
-        "description": "\ud83e\ude93 Concatenates and then decimates one or more csv files."
+        ]
     },
-    "Reddit Downloader": {
-        "tags": [
-            "Software"
-        ],
-        "image": "",
-        "links": {
-            "github": "reddit-downloader"
-        },
-        "description": "\u2b07\ufe0f Downloads all media content posted by specified Reddit users."
-    },
-    "Specialty Referral Network": {
-        "tags": [
-            "Visualization",
-            "Web Dev"
-        ],
-        "image": "",
+    {
+        "name": "Specialty Referral Network",
+        "description": null,
+        "image": null,
         "links": {
             "github": "referral-network"
         },
-        "description": "\ud83d\udd0d A Flask application that helps identify the bottlenecks in a specialty referral network."
-    },
-    "Drawing Epicycler": {
         "tags": [
-            "Web Dev"
-        ],
-        "image": "",
+            "Web Development"
+        ]
+    },
+    {
+        "name": "Drawing Epicycler",
+        "description": null,
+        "image": null,
         "links": {
             "github": "drawing-epicycler",
             "preview": "/epicycler/"
         },
-        "description": "\u270f\ufe0f Visualizes the discrete fourier transform of a user-drawn path using epicycles."
-    },
-    "Portfolio": {
         "tags": [
-            "Web Dev"
-        ],
-        "image": "",
+            "Web Development"
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "description": null,
+        "image": null,
         "links": {
             "github": "portfolio",
             "preview": "/"
         },
-        "description": "\ud83d\uddc2 My own personal website with a Flask (Python) backend."
-    },
-    "Cage Discord Bot": {
         "tags": [
-            "Databases"
-        ],
-        "image": "",
-        "links": {
-            "github": "cage-discord-bot"
-        },
-        "description": "\ud83e\udd16 A Nicolas Cage bot for Discord."
+            "Web Development"
+        ]
     },
-    "Bother Me Not": {
-        "tags": [],
-        "image": "",
+    {
+        "name": "Afloat",
+        "description": "🛟 An iOS app for cash flow management.",
+        "image": null,
         "links": {
-            "github": "bother-me-not"
+            "preview": "https://stayafloat.app/"
         },
-        "description": "\ud83d\udd15 A small Arduino project that lets people know if it's okay to bother me."
-    },
-    "Tooner": {
-        "tags": [],
-        "image": "",
-        "links": {
-            "github": "tooner"
-        },
-        "description": "\ud83d\udc36 An easier way to launch sessions and track invasions for Toontown Rewritten."
-    },
-    "MultiTooner": {
         "tags": [
-            "Software"
-        ],
-        "image": "",
+            "Featured",
+            "Mobile Development"
+        ]
+    },
+    {
+        "name": "Citi Bike Inventory",
+        "description": null,
+        "image": null,
         "links": {
-            "github": "multitooner"
+            "github": "citi-bike-inventory"
         },
-        "description": "\ud83d\udd79\ufe0f A Toontown Rewritten companion for MacOS that lives in the menu bar."
+        "tags": [
+            "Data Engineering",
+            "Machine Learning"
+        ]
     }
-}
+]

@@ -1,8 +1,8 @@
 __pycache__/
+data/
 ide/
 assets/
 env/
 venv/
 .vscode
-*.ini
 .DS_Store
