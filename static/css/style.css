@@ -120,7 +120,7 @@ p.para {
 }
 
 .site-main .project-area .button-group button:hover {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .site-main .project-area .button-group .active {
