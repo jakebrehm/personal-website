@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-02-06T18:10:53.359049+00:00",
+    "last_updated": "2025-02-25T23:00:13.834127+00:00",
     "projects": [
         {
             "name": "Snake AI",
@@ -138,6 +138,18 @@
             "tags": [
                 "Data Engineering",
                 "Machine Learning"
+            ]
+        },
+        {
+            "name": "balisage",
+            "description": "\ud83d\udc77\ud83c\udffb\u200d\u2642\ufe0f Generate HTML using an intuitive Python interface.",
+            "image": null,
+            "links": {
+                "github": "balisage"
+            },
+            "tags": [
+                "Featured",
+                "Library"
             ]
         }
     ]
